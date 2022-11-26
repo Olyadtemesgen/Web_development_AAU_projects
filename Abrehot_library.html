@@ -1,88 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .upper{
-            border-bottom:3px solid #999;
-        }
-        ::selection{
-            background-color: green;
-            color: white;
-        }
-        body{
-            box-sizing: border-box;
-        }
-        #upperbound div{
-            padding-left: 50px;
-            display: inline;
-            text-align: center;
-        }
-        #upperbound{
-            padding-top: 10px;
-            padding-left: 300px;
-            color: white;
-            font-weight: bolder;
-            font-size: 30px;
-            text-shadow: 0.5px 0.5px 0px white;
-        }
-        #Body {
-            width: 70%;
-        }
-        #fixed{
-            position: sticky;
-            top: -200px;
-            left: 0;
-            right: 0;
-        }
-        #fixed{
-            background-image: url(../user/Desktop/abrehotfinal.jpg);
-            width: 100%;
-            /* background-position: 10px 100px; */
-            background-size: cover;
-            height: 250px;
-            box-shadow: 10px 10px 10px black;
-            margin: 0;
-            padding: 0;
-            
-        }
-    #the{
-        width: 100%;
-        height: 250px;
-        background-color: black;
-        opacity: 0.6;    }
-    #input1{
-        padding-top: 100px;
-    }
-    #input1 .o {
-    max-width: 40%;
-    float: right;
-    font-size: 50px;
-    padding-right: 250px;
-}
-.buttom {
-  font-size: 22px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 5px #999;
-}
-.inn{
-    font-size: 22px;
-    border-radius: 10px;
-    width: 200px;
-}
-#movable{
-    padding-top: 30px;
-}
-
-   </style>
+    <link rel="stylesheet" href="Abrehot.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abrehot Library Management System</title>
 </head>
 <body>
     
@@ -92,15 +15,17 @@
                     <div>Home</div>
                     <div>Donate</div>
                     <div>About Us</div>
+                    <div><a href="#location" style="text-decoration: none;">Location</a></div>
                     <div><a href="#buttoms" style="text-decoration: none;">Contact</a></div>
                 </div>
             </div>
         </div>
         <div id="movable">
             <div id="input1">
-                <div class="o" style="padding-left: 780px; position:sticky; top:50px">                
-                    <input class='inn' type="text" placeholder="Search for a book">
-                    <button class='buttom' type="button">Submit</button>
+                <div class="o" style="padding-left:780px; float: right; position:sticky; top:50px">                
+                    <input id="texts" class='inn' type="text" value="oli" placeholder="Search for a book">
+                    <button id="bun" class='buttom' type="button">Submit</button>
+                    <!-- <img src="../user/Desktop/abrehot2.jpg" style="p" alt="" width="300px"> -->
                 </div>
                 <div style="padding-left: 90px; font-size: 22px; max-width: 50%;">
                 <p>
@@ -111,7 +36,8 @@
                     libraries are even more essential. Fortunately, the Ethiopian government, 
                     initiated by Prime Minister Abiy Ahmed, has recently built a grand public 
                     library intending to support Ethiopian literacy. Thanks to the Prime minister  
-                    and his government,Ethiopia now boasts the largest public library in East Africa, the Abrihot Library.</p><p>
+                    and his government,Ethiopia now boasts the largest public library in East Africa, the Abrihot Library.</p>
+                    <p>
                     Abrehot library (አብርሆት ቤተ­-መጽሐፍት) has the most extensive library in the country. 
                     Dr. Abiy Ahmed initiated the project, and it took eighteen months and a
                      budget of 1.15 billion Ethiopian birr for completion. It is open to the
@@ -138,25 +64,17 @@
                         it builds a successful reading culture throughout Ethiopia
                     </p>
                 </div>
-            </div>
-        </div>
     </div>
-    <div id="buttoms">
-        <div>Company: Abrehot Library</div>
-        <div>Phone Number: +251979657127</div>
-        <div style="padding-left: 350px;"><div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" 
-        scrolling="no" marginheight="0" marginwidth="0" 
-        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Abrehot Library&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-        </iframe><a href="https://formatjson.org/">
-            format json</a></div>
-            <style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe 
-        {width:600px!important;height:400px!important;}</style></div></div>
-    </div>
-    <div id="Body">
-        <p>
-        </p>
-    </div>
-    <div class="oli">
-    </div>
-</body>
+    </div></div>
+    
+    <!-- <div id="buttoms">
+    </div> -->
+    <div style="padding-left: 350px; font-size:30px; font-weight: bold;">Company: Abrehot Library</div>
+    <div style="padding-left: 350px; font-size: 30px; font-weight: bold;">Phone Number: +251979657127</div>
+
+    <div class="mapouter" style="padding-left:350px;"><div class="gmap_canvas"><iframe class="gmap_iframe" 
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Abrehot Library&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+    </body>
+    <script src="Abrehot.js"></script>
 </html>
